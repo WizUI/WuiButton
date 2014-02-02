@@ -1,0 +1,17 @@
+{
+	"name": "WuiButton",
+	"repo": "Wizcorp/wui-Button",
+	"version": "0.1.0",
+	"description": "Generic button wui component",
+	"dependencies": {
+		"component/inherit": "*",
+		"Wizcorp/wui-Dom": "0.1.0",
+		"Wizcorp/wui-buttonBehavior": "0.1.0"
+	},
+	"styles": [
+		"styles.css"
+	],
+	"scripts": [
+		"index.js"
+	]
+}
