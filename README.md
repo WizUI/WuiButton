@@ -2,88 +2,41 @@
 
 ## What it is
 
-WUIButton is a button component made for WUI. It behaves like an HTML5 button would be expected to.
+WuiButton is a simple button component made for WUI.
+It uses [wuiButtonBehavior](https://github.com/Wizcorp/wui-buttonBehavior) to setup events to listen on.
+This component inherits from [WuiDom](https://github.com/Wizcorp/wui-Dom) and utilizes WUI's buttonBehavior.
 
-It can listen for various events such as tap, tapstart and tapend.
-This component inherits from WUIDom and utilizes WUI's buttonBehavior.
+It already set CSS class on some event, so only styling is necessary.
+Its main CSS class name is 'WuiButton' and already set the pointer style for mouse over effect.
 
-## Methods
+See [wuiButtonBehavior](https://github.com/Wizcorp/wui-buttonBehavior) for more info.
 
-WUIButton has methods that it inherits from EventEmitter and WUIDom.
+## Method
 
-## enable
+The constructor receive 2 parameters:
 
-The enable method can be called to enable tap interaction with a disabled WUI button.
+| Parameter | Type       | Description
+| --------- | ---------- | -----------
+| `options` | _Object_   | Which is forwarded to the WUiDom class for extra settings.
+| `action`  | _Function_ | The function to execute for a successful tap.
 
-```javascript
-button.enable();
-```
+## How to use WuiButton
 
-### disable
+WuiButton is essentially made so all you have to do is some styling around it.
+And all is needed more more customisation is to inherit from it.
 
-The disable method can be called to prevent tap interaciton with a WUIButton
+When the button is actually being pressed, the 'pressed' CSS class is added.
 
-```javascript
-button.disable();
-```
 
-## Events
+## CSS Class
 
-### tapstart
+### pressed
+Active when the button is actually pressed.
+Set between [`tapstart`](https://github.com/Wizcorp/wui-buttonBehavior#tapstart)
+and [`tapend`](https://github.com/Wizcorp/wui-buttonBehavior#tapend)
 
-This event occurs when the user first presses a WUIButton.
-
-### tap
-
-The tap event occurs when the user confirms a tap event by releasing the tap.
-
-### tapend
-
-The tapend event is called when the tapevent has been processed successfully.
-
-### tapcancel
-
-The tapcancel event is only called when a tapevent is canceled, and the button loses focus.
-
-### enabled
-
-The enabled event is called when a WUIButton is enabled, such as by the enable method.
 
 ### disabled
-
-The disabled event is called when a WUIButton is disabled, such as by the disable method.
-
-## How to use WUIButton
-
-See the example below:
-
-```javascript
-var WuiButton = require('WuiButton');
-var btn;
-
-form.onsubmit = function () {
-	if (btn) {
-		btn.destroy();
-	}
-
-	btn = new WuiButton(form.caption.value);
-
-	btn.on('tapstart', function () {
-		// Users starts a tap event
-	});
-
-	btn.on('tapcancel', function () {
-		// User cancels a tap event
-	});
-
-	btn.on('tap', function () {
-		// Tap event is executing
-	});
-
-	btn.on('tapend', function () {
-		// Tap event has completed
-	});
-
-	return false;
-};
-```
+State when the button is disabled. Which means the button cannot be tapped.
+Set when the method [`disable`](https://github.com/Wizcorp/wui-buttonBehavior#disable) is called.
+Unset when the method [`enable`](https://github.com/Wizcorp/wui-buttonBehavior#enable) is called.
