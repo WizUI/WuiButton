@@ -4,7 +4,7 @@ var WuiDom = require('WuiDom');
 
 /**
  * @class
- * @classDesc General button behavior for the game
+ * @classDesc General button for WUI
  * @augments WuiDom
  *
  * @param {Object} [options] - params to forward to the WuiDom class
