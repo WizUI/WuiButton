@@ -1,5 +1,11 @@
 # Release history
 
+## v0.2.3
+
+### Dependencies update
+Updated `Wizcorp/wui-Dom` to v0.5.1
+Updated `Wizcorp/wui-buttonBehavior` to v0.1.4
+
 ## v0.2.0
 
 ### A Button more friendly

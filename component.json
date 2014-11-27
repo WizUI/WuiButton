@@ -1,12 +1,12 @@
 {
 	"name": "WuiButton",
 	"repo": "Wizcorp/wui-Button",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "Generic button wui component",
 	"dependencies": {
-		"Wizcorp/wui-Dom": "0.5.0",
+		"Wizcorp/wui-Dom": "0.5.1",
 		"Wizcorp/util": "0.1.0",
-		"Wizcorp/wui-buttonBehavior": "0.1.1"
+		"Wizcorp/wui-buttonBehavior": "0.1.4"
 	},
 	"styles": [
 		"styles.css"
