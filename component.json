@@ -4,7 +4,7 @@
 	"version": "0.2.4",
 	"description": "Generic button wui component",
 	"dependencies": {
-		"Wizcorp/wui-Dom": "0.5.2",
+		"Wizcorp/wui-Dom": "0.5.3",
 		"Wizcorp/util": "0.1.0",
 		"Wizcorp/wui-buttonBehavior": "0.1.4"
 	},
