@@ -1,5 +1,10 @@
 # Release history
 
+## v0.2.6
+
+### Dependencies update
+Updated `Wizcorp/wui-Dom` to v0.6.0
+
 ## v0.2.5
 
 ### Dependencies update
