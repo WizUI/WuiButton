@@ -1,5 +1,10 @@
 # Release history
 
+## v0.3.0
+
+### Let's meet the world
+Added more compatibility through package.json
+
 ## v0.2.6
 
 ### Dependencies update

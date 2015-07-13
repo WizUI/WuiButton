@@ -1,7 +1,0 @@
-.WuiButton {
-	cursor: pointer;
-}
-
-.WuiButton.disabled {
-	cursor: auto;
-}

@@ -4,7 +4,7 @@ var WuiDom = require('WuiDom');
 
 /**
  * @class
- * @classDesc General button for WUI
+ * @classdesc General button for WUI
  * @augments WuiDom
  *
  * @param {Object} [options] - params to forward to the WuiDom class
@@ -14,7 +14,6 @@ function WuiButton(options, action) {
 	WuiDom.call(this, 'div', options);
 
 	this.addClassNames('WuiButton');
-
 
 	buttonBehavior(this);
 
@@ -39,6 +38,9 @@ function WuiButton(options, action) {
 		this.delClassNames('disabled');
 	});
 
+	if (options && options.disable) {
+		this.disable();
+	}
 }
 
 inherits(WuiButton, WuiDom);
