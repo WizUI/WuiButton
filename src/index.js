@@ -1,6 +1,6 @@
 var inherits = require('util').inherits;
-var buttonBehavior = require('wuiButtonBehavior');
-var WuiDom = require('WuiDom');
+var buttonBehavior = require('wuibuttonbehavior');
+var WuiDom = require('wuidom');
 
 /**
  * @class

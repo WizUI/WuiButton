@@ -1,5 +1,11 @@
 # Release history
 
+## v0.3.1
+
+### Lower is better
+Renamed the require of 'WuiDom' into 'wuidom'
+Renamed the require of 'wuiButtonBehavior' into 'wuibuttonbehavior'
+
 ## v0.3.0
 
 ### Let's meet the world
